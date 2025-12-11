@@ -29,22 +29,24 @@ a {
 }
 
 .secondary-nav .nav-item {
-  border-right: 3px solid #E43FA4;
+  border-right: .1875rem solid #E43FA4;
   min-width: 6rem;
   text-align: center;
   /* transition-duration: 0s; */
 }
 
-.secondary-nav .nav-item:hover {
+.secondary-nav .nav-item:hover,
+.secondary-nav .nav-item:focus {
   background-color: #f495cd;
 }
 
-.secondary-nav .nav-item a:hover {
+.secondary-nav .nav-item a:hover,
+.secondary-nav .nav-item a:focus {
   color: #E43FA4;
 }
 
 .secondary-nav .nav-item.first {
-  border-left: 3px solid #E43FA4;
+  border-left: .1875rem solid #E43FA4;
 }
 
 .secondary-nav .nav-item a {
@@ -63,24 +65,26 @@ aside {
 }
 
 .account-actions a {
-  font-size: 19.2px;
+  font-size: 1.2rem;
   color: white;
 }
 
-.account-actions a:hover {
+.account-actions a:hover,
+.account-actions a:focus {
   color: #E538A9;
 }
 
 .custom-separator {
-  border-top: 1px solid #FBC2E5;
+  border-top: .0625rem solid #FBC2E5;
 }
 
 .user-card {
-  border: 3px solid #ffb8de;
+  border: .1875rem solid #ffb8de;
   margin-top: 1.75rem;
 }
 
-.user-card .card-body p:nth-of-type(1) {
+.user-card .card-body p:nth-of-type(1),
+.user-card .card-body p:nth-of-type(3) {
   color: #AB6288;
 }
 
@@ -94,14 +98,15 @@ aside {
 
 .user-card button {
   background-color: #FEEBF7;
-  border: 2px solid #FBBCE4;
+  border: .125rem solid #FBBCE4;
   color: #C470A4;
   width: 100%;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   transition-duration: 0s;
 }
 
-.user-card button:hover {
+.user-card button:hover,
+.user-card button:focus {
   background-color: #E538A9;
   color: white;
   border-color: #E538A9;
@@ -109,8 +114,8 @@ aside {
 
 .actions-container {
   background-color: #FCDEF2;
-  border-radius: 25px;
-  border: 2px solid #F9BBDF;
+  border-radius: 1.5625rem;
+  border: .125rem solid #F9BBDF;
 }
 
 .actions-container > div {
@@ -128,7 +133,7 @@ aside {
 
 .actions-container .list-group-item{
   border: none;
-  border-top: 1px solid #E0E0E0;
+  border-top: 0.0625rem solid #E0E0E0;
 }
 
 .actions-container p,
@@ -136,14 +141,15 @@ aside {
   color: #AB6288;
 }
 
-.actions-container a li:hover {
+.actions-container a li:hover,
+.actions-container a li:focus {
   background-color: #E538A9;
   color: white;
 }
 
 .about-me {
-  border: 1px solid #FBC2E5;
-  border-radius: 6px;
+  border: 0.0625rem solid #FBC2E5;
+  border-radius: .375rem;
   color: #AB6288;
   border-color: #FBC2E5;
 }
@@ -162,8 +168,8 @@ aside {
 
 .jumbotron {
   background-color: #FDEAF7;
-  border: 2px solid #F495CD;
-  border-radius: 6px;
+  border: .125rem solid #F495CD;
+  border-radius: .375rem;
   color: #E43095;
   margin-block: 2rem;
 }
@@ -198,8 +204,8 @@ aside {
 }
 
 .post-container {
-  border-radius: 6px;
-  border: 1px solid #F495CD;
+  border-radius: .375rem;
+  border: .0625rem solid #F495CD;
   display: flex;
   box-shadow: .25rem .25rem 0 0 #F495CD;
   background-color: white;
@@ -221,12 +227,12 @@ aside {
 
 .post-container::-webkit-scrollbar-track {
   background: #fff0f6;
-  border-radius: 6px;
+  border-radius: .375rem;
 }
 
 .post-container::-webkit-scrollbar-thumb {
   background-color: #fff0f6;
-  border-radius: 6px;
+  border-radius: .375rem;
   border: .125rem solid #F495CD;
 }
 
@@ -254,7 +260,8 @@ aside {
   color: #5289EA;
 }
 
-.post-container .post-text > *:last-child:hover {
+.post-container .post-text > *:last-child:hover,
+.post-container .post-text > *:last-child:focus {
   text-decoration: underline;
 }
 
@@ -291,7 +298,8 @@ aside {
   margin: 0;
 }
 
-.friend-card img:hover {
+.friend-card img:hover,
+.friend-card img:focus {
   scale: 1.1;
   transition: scale 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -335,7 +343,8 @@ audio::-webkit-media-controls-play-button {
   border-radius: 50%;
 }
 
-audio::-webkit-media-controls-play-button:hover {
+audio::-webkit-media-controls-play-button:hover,
+audio::-webkit-media-controls-play-button:focus {
   cursor: url(https://cdn.custom-cursor.com/db/22253/32/color-pixels-cream-cake-pointer.png), default !important;
 }
 
