@@ -20,6 +20,10 @@ a {
   background-color: #f495cd;
 }
 
+.primary-nav h1 span {
+  margin-left: 1rem;
+}
+
 .secondary-nav {
   background-color: #EE53B5;
 }
@@ -28,10 +32,28 @@ a {
   border-right: 3px solid #E43FA4;
   min-width: 6rem;
   text-align: center;
+  /* transition-duration: 0s; */
+}
+
+.secondary-nav .nav-item:hover {
+  background-color: #f495cd;
+}
+
+.secondary-nav .nav-item a:hover {
+  color: #E43FA4;
 }
 
 .secondary-nav .nav-item.first {
   border-left: 3px solid #E43FA4;
+}
+
+.secondary-nav .nav-item a {
+  color: white;
+  transition-duration: 0s;
+}
+
+.dropdown-menu li a.dropdown-item {
+  color: #E43FA4;
 }
 
 aside {
@@ -42,7 +64,11 @@ aside {
 
 .account-actions a {
   font-size: 19.2px;
-  color: #FFDEF1;
+  color: white;
+}
+
+.account-actions a:hover {
+  color: #E538A9;
 }
 
 .custom-separator {
@@ -50,25 +76,50 @@ aside {
 }
 
 .user-card {
-  border: 3px solid #F5CEE3;
+  border: 3px solid #ffb8de;
+  margin-top: 1.75rem;
+}
+
+.user-card .card-body p:nth-of-type(1) {
+  color: #AB6288;
+}
+
+.user-card .card-body p:nth-of-type(2) {
+  line-height: 1.2;
 }
 
 .card-body {
   color: #E538A9;
 }
 
-.card-button {
+.user-card button {
   background-color: #FEEBF7;
   border: 2px solid #FBBCE4;
   color: #C470A4;
   width: 100%;
   border-radius: 30px;
+  transition-duration: 0s;
+}
+
+.user-card button:hover {
+  background-color: #E538A9;
+  color: white;
+  border-color: #E538A9;
 }
 
 .actions-container {
   background-color: #FCDEF2;
   border-radius: 25px;
   border: 2px solid #F9BBDF;
+}
+
+.actions-container > div {
+  margin-block: 0.5rem;
+}
+
+.actions-container > p {
+  margin-bottom: 0;
+  margin-left: 1rem;
 }
 
 .actions-container .list-group-item.first{
@@ -83,6 +134,11 @@ aside {
 .actions-container p,
 .actions-container .list-group-item {
   color: #AB6288;
+}
+
+.actions-container a li:hover {
+  background-color: #E538A9;
+  color: white;
 }
 
 .about-me {
@@ -112,6 +168,10 @@ aside {
   margin-block: 2rem;
 }
 
+.jumbotron .row {
+  padding: 0.2rem 0.5rem;
+}
+
 .jumbotron div p {
   margin: 0;
   margin-left: 1rem;
@@ -132,18 +192,47 @@ aside {
   margin: 0;
 }
 
+.food-posts .post-container:nth-child(2) a{
+  margin: 0;
+  margin-right: auto;
+}
+
 .post-container {
   border-radius: 6px;
   border: 1px solid #F495CD;
+  display: flex;
   box-shadow: .25rem .25rem 0 0 #F495CD;
   background-color: white;
-  display: flex;
   flex-direction: row;
   gap: 1rem;
   align-items: center;
   padding: 0.75rem;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 0;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.post-container::-webkit-scrollbar {
+  height: .75rem;
+  width: .75rem;
+}
+
+.post-container::-webkit-scrollbar-track {
+  background: #fff0f6;
+  border-radius: 6px;
+}
+
+.post-container::-webkit-scrollbar-thumb {
+  background-color: #fff0f6;
+  border-radius: 6px;
+  border: .125rem solid #F495CD;
+}
+
+.post-container::-webkit-scrollbar-thumb:hover {
+  background-color: #E43095;
+  cursor: url(https://cdn.custom-cursor.com/db/22253/32/color-pixels-cream-cake-pointer.png), default !important;
 }
 
 .post-container .post-text > * {
@@ -169,34 +258,74 @@ aside {
   text-decoration: underline;
 }
 
-.post-container .post-text > *:last-child > p {
+.food-posts .post-container:nth-child(2),
+.food-posts .post-container:nth-child(3) {
+  padding: 1rem 1.5rem;
+}
+
+.food-posts .post-container:nth-child(3) {
+  margin-top: 2rem;
+}
+
+.food-posts .post-container:nth-child(2) p {
   text-align: end;
   margin: 0;
   margin-top: 1rem;
 }
 
+.food-posts .post-container:nth-child(3) p {
+  text-align: start;
+  margin: 0;
+  margin-top: 1rem;
+}
+
 .friend-card {
-  text-align: center;
   color: #E43095;
+  min-width: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .friend-card p {
   margin: 0;
 }
 
+.friend-card img:hover {
+  scale: 1.1;
+  transition: scale 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.pet-card:first-child {
+  margin-left: auto;
+}
+
+.pet-card:last-child {
+  margin-right: auto;
+}
+
 .pet-card {
   display: flex;
   flex-direction: row;
   gap: 0.75rem;
-  width: 29.16666667%; 
-  flex-shrink: 0;
-  max-width: 100%;
+  min-width: 15rem;
+}
+
+.pet-card-text {
+  height: fit-content;
+  margin: auto 0;
 }
 
 .pet-card .pet-card-text > * {
   margin: 0;
   color: #EE53B5;
+  line-height: 1.3;
 }
+
+.pet-card .pet-card-text p:first-child {
+  font-size: 1.2rem;
+}
+
 audio {
   width: 100%;
 }
@@ -207,7 +336,7 @@ audio::-webkit-media-controls-play-button {
 }
 
 audio::-webkit-media-controls-play-button:hover {
-    cursor: url(https://cdn.custom-cursor.com/db/22253/32/color-pixels-cream-cake-pointer.png), default !important;
+  cursor: url(https://cdn.custom-cursor.com/db/22253/32/color-pixels-cream-cake-pointer.png), default !important;
 }
 
 audio::-webkit-media-controls-panel {
