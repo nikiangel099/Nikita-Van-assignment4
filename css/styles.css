@@ -1,7 +1,7 @@
 body {
   font-family: 'Bubblegum Sans', 'Comic Sans MS', sans-serif;
   background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), /* White overlay with 70% opacity */
+    linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
     url("../img/star-background.png");
   background-size: cover;
   cursor: url(https://cdn.custom-cursor.com/db/22254/32/color-pixels-cream-cake-cursor.png), default !important;
@@ -177,7 +177,7 @@ aside {
   padding: 0.2rem 0.5rem;
 }
 
-.jumbotron div p {
+.jumbotron div h2 {
   margin: 0;
   margin-left: 1rem;
 }
@@ -235,8 +235,12 @@ aside {
   border: .125rem solid #F495CD;
 }
 
-.post-container::-webkit-scrollbar-thumb:hover {
+.post-container::-webkit-scrollbar-thumb:hover,
+.post-container::-webkit-scrollbar-thumb:focus {
   background-color: #E43095;
+}
+
+.post-container::-webkit-scrollbar-thumb:hover {
   cursor: url(https://cdn.custom-cursor.com/db/22253/32/color-pixels-cream-cake-pointer.png), default !important;
 }
 
@@ -301,13 +305,14 @@ aside {
   margin: 0;
 }
 
-.friend-card img:hover,
-.friend-card img:focus {
+.friend-card:hover img,
+.friend-card:focus img {
   scale: 1.1;
   transition: scale 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .pet-card {
+  width: 29%;
   min-width: 14rem;
 }
 
@@ -346,12 +351,21 @@ aside {
   font-size: 1.2rem;
 }
 
-.favourites-card {
-  min-width: 13rem;
-  margin-block: 1rem;
+.favourites-container {
+  gap: 0;
 }
 
-.favourites-card img:hover {
+.favourites-container > .favourites-card:nth-of-type(2) {
+  width: 29%;
+}
+
+.favourites-card {
+  margin-block: 1rem;
+  min-width: 13rem;
+}
+
+.favourites-card:hover img,
+.favourites-card:focus img {
   margin-top: -6%;
   box-shadow: .25rem .25rem 0 0 #F495CD;
   transition: margin 1s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 1s cubic-bezier(0.075, 0.82, 0.165, 1);
