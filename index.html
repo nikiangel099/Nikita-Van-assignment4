@@ -1,487 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My Homepage | My squishies network</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
 
-  <body>
-    <header class="mb-4">
-      <nav class="">
-        <div class="primary-nav">
-          <div
-            class="container d-flex flex-wrap justify-content-between align-items-center"
-          >
-            <h1>
-              <a
-                href="/"
-                class="d-flex align-items-center me-lg-auto text-light text-decoration-none"
-              >
-                <img
-                  src="img/squishies-logo.png"
-                  width="60"
-                  height="60"
-                  alt="pixelated cartoon bunny"
-                />
-                <span class="fs-1">My squishies network</span>
-              </a>
-            </h1>
-            <ul class="nav account-actions">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link"
-                  href="#"
-                  id="dropdown01"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
-                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
-                  </svg></a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link px-2">My account</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link px-2">Sign Out</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="d-flex flex-wrap secondary-nav">
-          <div class="container">
-            <ul class="nav me-auto">
-              <li class="nav-item first py-2">
-                <a href="#" class="nav-link px-2 active" aria-current="page"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item py-2">
-                <a href="#" class="nav-link px-2">Mail</a>
-              </li>
-              <li class="nav-item py-2">
-                <a href="#" class="nav-link px-2">Friends</a>
-              </li>
-              <li class="nav-item py-2 dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="dropdown01"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >Explore</a
-                >
-                <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item py-2 dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="dropdown01"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >Music Mix</a
-                >
-                <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <div class="container my-4">
-        <div class="row">
-          <aside class="col-4 col-lg-3 mb-4">
-            <div class="card user-card shadow-none">
-              <img
-                class="card-img-top"
-                src="img/user-profile-pic.png"
-                alt="Card image cap"
-              />
-              <div class="card-body p-4 text-center">
-                <h5 class="card-title fs-4">Sakura Blossom</h5>
-                <p class="card-text">15/F/Canada 🌸</p>
-                <p class="card-text fs-5">
-                  💞💞 I love animals and watching anime!
-                </p>
-                <p class="">
-                Mood: 
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-emoji-laughing-fill"
-                  viewBox="0 0 16 16"
-                >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Homepage | My squishies network</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="mb-4">
+    <nav class="">
+      <div class="primary-nav">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center">
+          <h1>
+            <a href="/" class="d-flex align-items-center me-lg-auto text-light text-decoration-none">
+              <img src="img/squishies-logo.png" width="60" height="60" alt="pixelated cartoon bunny" />
+              <span class="fs-1">My squishies network</span>
+            </a>
+          </h1>
+          <ul class="nav account-actions">
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-bell-fill" viewBox="0 0 16 16">
                   <path
-                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M7 6.5c0 .501-.164.396-.415.235C6.42 6.629 6.218 6.5 6 6.5s-.42.13-.585.235C5.164 6.896 5 7 5 6.5 5 5.672 5.448 5 6 5s1 .672 1 1.5m5.331 3a1 1 0 0 1 0 1A5 5 0 0 1 8 13a5 5 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5m-1.746-2.765C10.42 6.629 10.218 6.5 10 6.5s-.42.13-.585.235C9.164 6.896 9 7 9 6.5c0-.828.448-1.5 1-1.5s1 .672 1 1.5c0 .501-.164.396-.415.235"
-                  />
-                </svg>
-                Feeling Excited!
-                </p>
-                <button href="#" class="btn btn-primary">Send Nudge</button>
-              </div>
-            </div>
-            <audio autoplay controls>
-              <source src="media/chill-music.mp3" type="audio/mpeg" />
-              Your browser does not support the audio element.
-            </audio>
-            <div class="actions-container py-2 px-4">
-              <div class="card shadow-none border-0">
-                <ul class="list-group list-group-flush">
-                  <a href="#" class="border-0">
-                    <li class="list-group-item first">Block User</li>
-                  </a>
-                  <a href="#">
-                    <li class="list-group-item">Add to Friends</li>
-                  </a>
-                  <a href="#">
-                    <li class="list-group-item">Instant Message</li>
-                  </a>
-                </ul>
-              </div>
-            </div>
-            <div class="card shadow-none about-me">
-              <div class="card-header">About Me</div>
-              <ul class="list-group list-group-flush custom-separator">
-                <li class="list-group-item">Status: In 4th grade</li>
-                <li class="list-group-item">Height: 5'0</li>
-                <li class="list-group-item">Star Sign: Shooting Star</li>
-                <li class="list-group-item">Cat Person 🐈</li>
+                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
+                </svg></a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
               </ul>
-            </div>
-          </aside>
-          <div class="col-8 main-content">
-            <div class="jumbotron jumbotron-fluid">
-              <div class="row">
-                <p class="text-center fs-5">
-                  My name is in your extended network
-                </p>
-              </div>
-            </div>
-            <div class="thought-text">
-              <p class="fs-5">My fab thought of the day:</p>
-              <h2>
-                “OMG, I think I shipped Katniss and Peeta harder than I love
-                pink. No regrets! Worth it!”
-              </h2>
-            </div>
-            <section class="food-posts">
-              <div class="jumbotron jumbotron-fluid">
-                <div class="row">
-                  <div class="col-12">
-                    <img
-                      src="img/pink-star.png"
-                      width="30"
-                      height="30"
-                      alt=""
-                    />
-                    <p class="fs-3">Sakura's Latest Sweets!</p>
-                    <img
-                      class="end"
-                      src="img/pink-star.png"
-                      width="30"
-                      height="30"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="post-container">
-                <img
-                  src="img/cartoon-cupcake.png"
-                  width="130"
-                  height="130"
-                  alt=""
-                />
-                <div class="post-text">
-                  <p>🌸 Sakura Blossom just posted:</p>
-                  <p>
-                    I just had the best cupcake in the world! It was vanilla
-                    with strawberry frosting. We got it from a farmer's market
-                    and I'm def going back next weekend!
-                  </p>
-                  <a href="#"><p>💬 Comments: 10</p></a>
-                </div>
-              </div>
-              <div class="post-container">
-                <div class="post-text">
-                  <p>🌸 Sakura Blossom (10/12):</p>
-                  <p>
-                    OMG guys have you tried matcha? I have, it was perfectly
-                    creamy with a sweet vanilla twist, and pink straw was so
-                    cute.
-                  </p>
-                  <a href="#"><p>💬 Comments: 21</p></a>
-                </div>
-                <img
-                  src="img/cartoon-matcha.png"
-                  width="130"
-                  height="130"
-                  alt=""
-                />
-              </div>
-            </section>
-            <section class="friends">
-              <div class="jumbotron jumbotron-fluid">
-                <div class="row">
-                  <div class="col-12">
-                    <img
-                      src="img/pink-star.png"
-                      width="30"
-                      height="30"
-                      alt=""
-                    />
-                    <p class="fs-3">Who's in My Circle?</p>
-                    <img
-                      class="end"
-                      src="img/pink-star.png"
-                      width="30"
-                      height="30"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="row post-container text-center">
-                <a href="#" class="col-2">
-                  <div class="friend-card">
-                    <img
-                      src="img/friend-avatar-5.png"
-                      width="100"
-                      height="108"
-                      alt=""
-                    />
-                    <p>Luna Cat</p>
-                  </div>
-                </a>
-                <a href="#" class="col-2">
-                  <div class="friend-card col-2">
-                    <img
-                      src="img/friend-avatar-4.png"
-                      width="100"
-                      height="108"
-                      alt=""
-                    />
-                    <p>Ren Boy</p>
-                  </div>
-                </a>
-                <a href="#" class="col-2">
-                  <div class="friend-card col-2">
-                    <img
-                      src="img/friend-avatar-2.png"
-                      width="100"
-                      height="108"
-                      alt=""
-                    />
-                    <p>Lily Unicorn</p>
-                  </div>
-                </a>
-                <a href="#" class="col-2">
-                  <div class="friend-card col-2">
-                    <img
-                      src="img/friend-avatar-1.png"
-                      width="108"
-                      height="108"
-                      alt=""
-                    />
-                    <p>Kitty Black</p>
-                  </div>
-                </a>
-                <a href="#" class="col-2">
-                  <div class="friend-card col-2">
-                    <img
-                      src="img/friend-avatar-3.png"
-                      width="100"
-                      height="108"
-                      alt=""
-                    />
-                    <p>Haru Boy</p>
-                  </div>
-                </a>
-                <a href="#" class="col-2">
-                  <div class="friend-card col-2">
-                    <img
-                      src="img/friend-avatar-6.png"
-                      width="100"
-                      height="108"
-                      alt=""
-                    />
-                    <p>Suzi Bell</p>
-                  </div>
-                </a>
-              </div>
-            </section>
-            <section class="pets">
-              <div class="jumbotron jumbotron-fluid">
-                <div class="row">
-                  <div class="col-12">
-                    <img
-                      src="img/pink-star.png"
-                      width="30"
-                      height="30"
-                      alt=""
-                    />
-                    <p class="fs-3">My Furry Friends</p>
-                    <img
-                      class="end"
-                      src="img/pink-star.png"
-                      width="30"
-                      height="30"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="row post-container col-12">
-                <div class="pet-card col-3">
-                  <img
-                    class=""
-                    src="img/pet-1.png"
-                    width="100"
-                    height="100"
-                    alt=""
-                  />
-                  <div class="pet-card-text">
-                    <p>Stellar</p>
-                    <p>Species: Cat</p>
-                    <p>Favourite Toy: Mouse Toy</p>
-                  </div>
-                </div>
-                <div class="pet-card col-3">
-                  <img
-                    class=""
-                    src="img/pet-3.png"
-                    width="100"
-                    height="100"
-                    alt=""
-                  />
-                  <div class="pet-card-text">
-                    <p>Roster</p>
-                    <p>Species: Dog</p>
-                    <p>Favourite Toy: Squeaky Bone</p>
-                  </div>
-                </div>
-                <div class="pet-card col-3">
-                  <img
-                    class=""
-                    src="img/pet-2.png"
-                    width="100"
-                    height="100"
-                    alt=""
-                  />
-                  <div class="pet-card-text">
-                    <p>Pip</p>
-                    <p>Species: Hamster</p>
-                    <p>Favourite Toy: Maze</p>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section class="favourites">
-              <div class="jumbotron jumbotron-fluid">
-                <div class="row">
-                  <div class="col-12">
-                    <img
-                      src="img/pink-star.png"
-                      width="30"
-                      height="30"
-                      alt=""
-                    />
-                    <p class="fs-3">My weekly favs</p>
-                    <img
-                      class="end"
-                      src="img/pink-star.png"
-                      width="30"
-                      height="30"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="row post-container col-12">
-                <div class="pet-card col-3">
-                  <img
-                    class=""
-                    src="img/pet-1.png"
-                    width="100"
-                    height="100"
-                    alt=""
-                  />
-                  <div class="pet-card-text">
-                    <p>Stellar</p>
-                    <p>Species: Cat</p>
-                    <p>Favourite Toy: Mouse Toy</p>
-                  </div>
-                </div>
-                <div class="pet-card col-3">
-                  <img
-                    class=""
-                    src="img/pet-3.png"
-                    width="100"
-                    height="100"
-                    alt=""
-                  />
-                  <div class="pet-card-text">
-                    <p>Roster</p>
-                    <p>Species: Dog</p>
-                    <p>Favourite Toy: Squeaky Bone</p>
-                  </div>
-                </div>
-                <div class="pet-card col-3">
-                  <img
-                    class=""
-                    src="img/pet-2.png"
-                    width="100"
-                    height="100"
-                    alt=""
-                  />
-                  <div class="pet-card-text">
-                    <p>Pip</p>
-                    <p>Species: Hamster</p>
-                    <p>Favourite Toy: Maze</p>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2">My account</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2">Sign Out</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </main>
-    <!-- optional Bootstrap JS bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+      <div class="d-flex flex-wrap secondary-nav">
+        <div class="container">
+          <ul class="nav me-auto">
+            <li class="nav-item first py-2">
+              <a href="#" class="nav-link px-2 active" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item py-2">
+              <a href="#" class="nav-link px-2">Mail</a>
+            </li>
+            <li class="nav-item py-2">
+              <a href="#" class="nav-link px-2">Friends</a>
+            </li>
+            <li class="nav-item py-2 dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
+                aria-expanded="false">Explore</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item py-2 dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
+                aria-expanded="false">Music Mix</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container my-4">
+      <div class="row">
+        <aside class="col-4 col-lg-3 mb-4">
+          <div class="card user-card shadow-none">
+            <img class="card-img-top" src="img/user-profile-pic.png" alt="Card image cap" />
+            <div class="card-body p-4 text-center">
+              <h5 class="card-title fs-4">Sakura Blossom</h5>
+              <p class="card-text">17/F/Canada 🌸</p>
+              <p class="card-text fs-5">
+                💞💞 I love animals and watching anime!
+              </p>
+              <p class="">
+                Mood:
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-emoji-laughing-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M7 6.5c0 .501-.164.396-.415.235C6.42 6.629 6.218 6.5 6 6.5s-.42.13-.585.235C5.164 6.896 5 7 5 6.5 5 5.672 5.448 5 6 5s1 .672 1 1.5m5.331 3a1 1 0 0 1 0 1A5 5 0 0 1 8 13a5 5 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5m-1.746-2.765C10.42 6.629 10.218 6.5 10 6.5s-.42.13-.585.235C9.164 6.896 9 7 9 6.5c0-.828.448-1.5 1-1.5s1 .672 1 1.5c0 .501-.164.396-.415.235" />
+                </svg>
+                Feeling Excited!
+              </p>
+              <button href="#" class="btn btn-primary">Send Nudge</button>
+            </div>
+          </div>
+          <audio autoplay controls>
+            <source src="media/chill-music.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+          <div class="actions-container py-2 px-4">
+            <div class="card shadow-none border-0">
+              <ul class="list-group list-group-flush">
+                <a href="#" class="border-0">
+                  <li class="list-group-item first">Block User</li>
+                </a>
+                <a href="#">
+                  <li class="list-group-item">Add to Friends</li>
+                </a>
+                <a href="#">
+                  <li class="list-group-item">Instant Message</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+          <div class="card shadow-none about-me">
+            <div class="card-header">About Me</div>
+            <ul class="list-group list-group-flush custom-separator">
+              <li class="list-group-item">Status: In 11th grade</li>
+              <li class="list-group-item">Height: 5'0</li>
+              <li class="list-group-item">Star Sign: Taurus</li>
+              <li class="list-group-item">Cat Person 🐈</li>
+            </ul>
+          </div>
+        </aside>
+        <div class="col-8 main-content">
+          <div class="jumbotron jumbotron-fluid">
+            <div class="row">
+              <p class="text-center fs-5">
+                My name is in your extended network
+              </p>
+            </div>
+          </div>
+          <div class="thought-text">
+            <p class="fs-5">My fab thought of the day:</p>
+            <h2>
+              “I genuinely cannot process how I'm supposed to survive two whole weeks waiting for the finale of my fav anime Blue Box. Please send emotional support and fast-forward buttons.”
+            </h2>
+          </div>
+          <section class="food-posts">
+            <div class="jumbotron jumbotron-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <img src="img/pink-star.png" width="30" height="30" alt="" />
+                  <p class="fs-3">Sakura's Latest Sweets!</p>
+                  <img class="end" src="img/pink-star.png" width="30" height="30" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="post-container">
+              <img src="img/cartoon-cupcake.png" width="130" height="130" alt="" />
+              <div class="post-text">
+                <p>🌸 Sakura Blossom just posted:</p>
+                <p>
+                  I just had the best cupcake in the world! It was vanilla
+                  with strawberry frosting. We got it from a farmer's market
+                  and I'm def going back next weekend!
+                </p>
+                <a href="#">
+                  <p>💬 Comments: 10</p>
+                </a>
+              </div>
+            </div>
+            <div class="post-container">
+              <div class="post-text">
+                <p>🌸 Sakura Blossom (10/12):</p>
+                <p>
+                  OMG guys have you tried matcha? I have, it was perfectly
+                  creamy with a sweet vanilla twist, and pink straw was so
+                  cute.
+                </p>
+                <a href="#">
+                  <p>💬 Comments: 21</p>
+                </a>
+              </div>
+              <img src="img/cartoon-matcha.png" width="150" height="150" alt="" />
+            </div>
+          </section>
+          <section class="friends">
+            <div class="jumbotron jumbotron-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <img src="img/pink-star.png" width="30" height="30" alt="" />
+                  <p class="fs-3">Who's in My Circle?</p>
+                  <img class="end" src="img/pink-star.png" width="30" height="30" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="row post-container text-center">
+              <a href="#" class="col-2">
+                <div class="friend-card">
+                  <img src="img/friend-avatar-5.png" width="100" height="108" alt="" />
+                  <p>Luna Cat</p>
+                </div>
+              </a>
+              <a href="#" class="col-2">
+                <div class="friend-card col-2">
+                  <img src="img/friend-avatar-4.png" width="100" height="108" alt="" />
+                  <p>Ren Boy</p>
+                </div>
+              </a>
+              <a href="#" class="col-2">
+                <div class="friend-card col-2">
+                  <img src="img/friend-avatar-2.png" width="100" height="108" alt="" />
+                  <p>Lily Unicorn</p>
+                </div>
+              </a>
+              <a href="#" class="col-2">
+                <div class="friend-card col-2">
+                  <img src="img/friend-avatar-1.png" width="108" height="108" alt="" />
+                  <p>Kitty Black</p>
+                </div>
+              </a>
+              <a href="#" class="col-2">
+                <div class="friend-card col-2">
+                  <img src="img/friend-avatar-3.png" width="100" height="108" alt="" />
+                  <p>Haru Boy</p>
+                </div>
+              </a>
+              <a href="#" class="col-2">
+                <div class="friend-card col-2">
+                  <img src="img/friend-avatar-6.png" width="100" height="108" alt="" />
+                  <p>Suzi Bell</p>
+                </div>
+              </a>
+            </div>
+          </section>
+          <section class="pets">
+            <div class="jumbotron jumbotron-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <img src="img/pink-star.png" width="30" height="30" alt="" />
+                  <p class="fs-3">My Furry Friends</p>
+                  <img class="end" src="img/pink-star.png" width="30" height="30" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="row post-container col-12">
+              <div class="pet-card col-3">
+                <img class="" src="img/pet-1.png" width="100" height="100" alt="" />
+                <div class="pet-card-text">
+                  <p>Stellar</p>
+                  <p>Species: Cat</p>
+                  <p>Favourite Toy: Mouse Toy</p>
+                </div>
+              </div>
+              <div class="pet-card col-3">
+                <img class="" src="img/pet-3.png" width="100" height="100" alt="" />
+                <div class="pet-card-text">
+                  <p>Roster</p>
+                  <p>Species: Dog</p>
+                  <p>Favourite Toy: Squeaky Bone</p>
+                </div>
+              </div>
+              <div class="pet-card col-3">
+                <img class="" src="img/pet-2.png" width="100" height="100" alt="" />
+                <div class="pet-card-text">
+                  <p>Pip</p>
+                  <p>Species: Hamster</p>
+                  <p>Favourite Toy: Maze</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="favourites">
+            <div class="jumbotron jumbotron-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <img src="img/pink-star.png" width="30" height="30" alt="" />
+                  <p class="fs-3">My weekly favs</p>
+                  <img class="end" src="img/pink-star.png" width="30" height="30" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="row post-container col-12">
+              <div class="favourites-card col-3">
+                <a href="https://blue-box.fandom.com/wiki/Blue_Box_(Anime)" target="_blank">
+                  <img class="" src="img/bluebox-anime.jpg" width="120" height="120" alt="" />
+                  <div class="favourites-card-text">
+                    <p>Anime</p>
+                    <p>Blue Box</p>
+                  </div>
+                </a>
+              </div>
+              <div class="favourites-card col-3">
+                <a href="https://spy-x-family.fandom.com/wiki/Volume_15" target="_blank">
+                  <img class="" src="img/spyx-manga.jpg" width="80" height="120" alt="" />
+                  <div class="favourites-card-text">
+                    <p>Manga</p>
+                    <p>Spy x Family</p>
+                    <p>Vol 15</p>
+                  </div>
+                </a>
+              </div>
+              <div class="favourites-card col-3">
+                <a href="https://open.spotify.com/album/4a6NzYL1YHRUgx9e3YZI6I" target="_blank">
+                  <img class="" src="img/taylor-swift-album.jpg" width="120" height="120" alt="" />
+                  <div class="favourites-card-text">
+                    <p>Album</p>
+                    <p>The Life of a Showgirl</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- optional Bootstrap JS bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
